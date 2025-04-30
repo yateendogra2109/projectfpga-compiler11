@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Syntaxia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Syntaxia Compiler</h2>
+    <div class="editor-container">
+      <div id="editor" class="editor"> Write your C++ code here</div>
+      <div class="btn-wrapper">
+        <button onclick="compileCode()" class="compile-btn">Compile</button>
+      </div>
+    </div>
+    
+    <div class="output-section">
+      <div>
+        <h3>Lexical Analysis</h3>
+        <pre id="lexical-output"></pre>
+      </div>
+  
+      <div>
+        <h3>Assembly Code</h3>
+        <pre id="assembly-output"></pre>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/monaco-editor@latest/min/vs/loader.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
